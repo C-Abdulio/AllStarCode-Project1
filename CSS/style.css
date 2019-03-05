@@ -1,0 +1,88 @@
+*{
+  margin: 0 auto;
+}
+
+/*///Header*/
+
+header{
+  margin-top: 10em;
+  margin-left: 0;
+  /* border: black solid 2px; */
+  position:fixed;
+}
+.crossBar{
+  margin: 0;
+  background-color: rgba(23, 204, 255);
+  position:fixed;
+}
+
+#crossNav1{
+  /* border: yellow solid 2px; */
+  width: 100vw;
+  position: absolute;
+  display:flex;
+  z-index: 1;
+}
+
+#crossNav1 > h1 + nav{
+  justify-content: flex-end;
+}
+
+#crossNav2{
+  width:200px;
+  height: 100rem;
+  margin-top: -16em;
+  position:absolute;
+  /* border:red solid 2px; */
+}
+
+
+/*////Main content///*/
+
+.mainCont{
+  /* margin-left: 20px; */
+  /* margin-top: 20px; */
+  margin:6em 13em 0 ;
+  width:65em;
+  height:100vw;
+  /* position:relative; */
+  overflow:hidden;
+  border:black solid 1px;
+  background-color:rgb(255,200,134);
+  z-index: 2;
+  display:flex;
+}
+
+.mainCont article{
+  margin:10px;
+  padding:10px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  flex: 2;
+}
+
+.mainCont section{
+  flex: 1;
+  margin:5px;
+  padding: 10px;
+  background-color: pink;
+  color: purple;
+  border: red solid 1px;
+  border-radius: 10px;
+}
+
+span{
+  color:red;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+footer{
+  /* margin-top:100vw; */
+  width:100%;
+  background-color: black;
+  position: absolute;
+  display:flex;
+  z-index:2;
+}
