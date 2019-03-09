@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*///alt-header style ///*/
+header{
+  background-color: black;
+  position: static;
+  color:white;
+  z-index:1;
+  width: 100vw;
+  height: 200px;
+
+}
+
+nav{
+  text-align: center;
+  display:flex;
+  flex-direction: row;
+  word-spacing: 10px;
+  padding:15px;
+  font-size: 20pt;
+  justify-content: space-around;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+nav > div {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*///content//*/
+.parent1{
+  padding:20px;
+  display:flex;
+  border: solid purple 2px;
+}
+
+.child{
+  border: solid red 1px;
+  flex: 1;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+#image{
+ background-color:blue;
+}
+
+#about{
+  flex:2;
+  font-size:20pt;
+}
+
+/*//paralax//*/
+
+.paralaxPlug{
+  width:auto;
+  height:100px;
+  background-color:white;
+}
+
+.paralax{
+  width:auto;
+  height:200px;
+  background-image:url(http://www.artofwellbeing.com/wp-content/uploads/2015/09/Healthy-coffee-2.jpg);
+  background-attachment: fixed;
+}
+
+.paralax > h2{
+  padding-top:60px;
+  font-size: 50pt;
+  font-weight: bolder;
+  text-shadow: 5px 2px black;
+  color:white;
+  text-align:center;
+  align-items: center;
+}
+footer{
+  width: 100vw;
+  background-color: blue;
+  height:100px;
+  position: static;
+}
+
+#social{
+
+}

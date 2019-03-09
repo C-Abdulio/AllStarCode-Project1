@@ -5,15 +5,16 @@
 /*///Header*/
 
 header{
-  margin-top: 10em;
+  margin-top: 16em;
   margin-left: 0;
   /* border: black solid 2px; */
   position:fixed;
 }
 .crossBar{
   margin: 0;
-  background-color: rgba(23, 204, 255);
-  position:fixed;
+  background-color: rgba(255, 204, 255);
+  position:absolute;
+  /* position:sticky; */
 }
 
 #crossNav1{
@@ -22,34 +23,102 @@ header{
   position: absolute;
   display:flex;
   z-index: 1;
+  margin-top: -4em;
+  padding:20px;
 }
 
 #crossNav1 > h1 + nav{
   justify-content: flex-end;
 }
 
+#crossNav1 h1{
+  padding-left: 20px;
+}
+
+#crossNav1 nav{
+  list-style:none;
+  display:flex;
+}
+nav > li{
+  text-decoration: none;
+  justify-content: space-around;
+}
+
 #crossNav2{
   width:200px;
-  height: 100rem;
+  height: 200vw;
   margin-top: -16em;
   position:absolute;
   /* border:red solid 2px; */
 }
 
+#crossNav2 > img{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  width:200px;
+  height:212px;
+  z-index:3;
+  -webkit-animation: rotate 4s linear infinite;
+  -moz-animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
+}
+
+-webkit-@keyframes rotate {
+  100%{
+    -webkit-transform: rotate(360deg);
+  }
+}
+-moz-@keyframes rotate {
+  100%{
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/*//Paralax header*/
+
+.paralaxPlug{
+  width:auto;
+  height:10px;
+  background-color:white;
+}
+
+.paralax{
+  width:auto;
+  height:200px;
+  background-image:url(http://www.artofwellbeing.com/wp-content/uploads/2015/09/Healthy-coffee-2.jpg);
+  background-attachment: fixed;
+}
+
+.paralax > h2{
+  padding-top:60px;
+  font-size: 50pt;
+  font-weight: bolder;
+  text-shadow: 5px 2px black;
+  color:white;
+  text-align:center;
+  align-items: center;
+}
 
 /*////Main content///*/
 
 .mainCont{
   /* margin-left: 20px; */
   /* margin-top: 20px; */
-  margin:6em 13em 0 ;
+  margin:12em 13em 0 ;
   width:65em;
   height:100vw;
   /* position:relative; */
-  overflow:hidden;
+  overflow:scroll;
   border:black solid 1px;
   background-color:rgb(255,200,134);
-  z-index: 2;
+  /* z-index: 2; */
   display:flex;
 }
 
@@ -60,6 +129,13 @@ header{
   color: white;
   border-radius: 20px;
   flex: 2;
+  display:grid;
+}
+
+article > .parent{
+  width: 100%;
+  height: 100px;
+  border: red solid 1px;
 }
 
 .mainCont section{
