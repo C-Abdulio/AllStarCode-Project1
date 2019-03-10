@@ -34,7 +34,7 @@ nav > div {
   justify-content: space-around;
 }
 
-/*///content//*/
+/*///content - About//*/
 .parent1{
   padding:20px;
   display:flex;
@@ -68,67 +68,121 @@ nav > div {
   font-size:30pt;
 }
 
-/*//paralax//*/
+  /*//paralax//*/
 
-.paralaxPlug{
-  width:auto;
-  height:100px;
-  background-color:white;
-}
+  .paralaxPlug{
+    width:auto;
+    height:100px;
+    background-color:white;
+  }
 
-.paralax{
-  width:auto;
-  height:200px;
-  background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsirpizza-mi.com%2Fwp-content%2Fuploads%2F2017%2F11%2FSir-Pizza-Pepperoni-Feast-1920x1200.jpg&f=1);
-  background-attachment: fixed;
-}
+  .paralax{
+    width:auto;
+    height:200px;
+    background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsirpizza-mi.com%2Fwp-content%2Fuploads%2F2017%2F11%2FSir-Pizza-Pepperoni-Feast-1920x1200.jpg&f=1);
+    background-attachment: fixed;
+  }
 
-.paralax > h2{
-  padding-top:60px;
-  font-size: 50pt;
-  font-weight: bolder;
-  text-shadow: 5px 2px black;
-  color:white;
-  text-align:center;
-  align-items: center;
-}
+  .paralax > h2{
+    padding-top:60px;
+    font-size: 50pt;
+    font-weight: bolder;
+    text-shadow: 5px 2px black;
+    color:white;
+    text-align:center;
+    align-items: center;
+  }
 
-/*//image gallery/*/
-.parent2{
-display:grid;
-grid-template-areas:
-"i1 i2 i3"
- "article article article"
- "article article article"
-}
+  /*//image gallery/*/
+  .parent2{
+  display:grid;
+  grid-template-areas:
+  "i1 i2 i3"
+   "article article article"
+   "article article article"
+  }
 
-#image1,#image2,#image3{
- grid-area: i1, i2, i3;
- background-color: blue;
- border-radius: 20px;
+  #image1,#image2,#image3{
+   grid-area: i1, i2, i3;
+   background-color: blue;
+   border-radius: 20px;
 
-}
+  }
 
-#image1{
-  background-image:url('../Images/pizza-slice.png');
-}
+  #image1{
+    background:url(https://cbsnewyork.files.wordpress.com/2012/01/lucias-08.jpg?w=1440)100% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #image2{
+    background:url(https://asset.homechef.com/uploads/meal/plated/2996/display_homechef_Chicago_Style_Spinach_Deep_Dish_Pizza__8_of_9_.jpg)100% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #image3{
+    background:url(https://s3-media3.fl.yelpcdn.com/bphoto/5CK-YsPPShwuXacmQmkOpg/o.jpg)100% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 .parent2 article {
   grid-area: article;
-  width:50%;
+  width:100%;
   height:300px;
-  padding:10px;
+  padding:20px;
+  margin-top: 20px;
+  font-size: 30pt;
 
 }
 
+/*//content-contact*/
+
+#contactTitle{
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#contactTitle img{
+  min-width:50px;
+  max-height:50px;
+}
+
+section{
+  text-align: center;
+  font-size: 20pt;
+}
+.contacts{
+  display: flex;
+  flex-direction:row;
+}
+
+.parent3{
+  display:flex;
+}
+
+.parent3 > form{
+  flex-direction:column;
+}
+
+/*///footer//*/
 footer{
-  width: 100vw;
-  background-color: blue;
+  /* width: 100vw; */
+  background-color: rgb(193, 60, 60);
   height:100px;
   position: static;
   margin-top: 100vh;
+  display: flex;
 }
 
 #social{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 
+#social > i{
+  margin:5px;
 }
