@@ -186,6 +186,11 @@ footer{
   justify-content: flex-end;
 }
 
-#social > i{
-  margin:5px;
+#social > a{
+  justify-content: space-around;
+  margin:10px;
+}
+
+#social > i {
+    font-size: 20pt;
 }

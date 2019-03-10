@@ -205,7 +205,7 @@ header{
 }
 
 article > p+span+h2 {
-  
+
 }
 article > .parent{
   width: 100%;
@@ -250,12 +250,31 @@ h2 + article span{
   grid-row-start: 1;
   grid-row-end: 2;
 }
+/*///footer///*/
 
 footer{
-  margin-top:57vh;
+  margin-top:60vh;
   width:100%;
   background-color: black;
   position: absolute;
   display:flex;
   z-index:2;
+}
+
+#social{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#social > a{
+  color:white;
+  justify-content: space-around;
+  margin:10px;
+}
+
+i {
+  width:20px;
+  height: 20px;
+  font-size: 20px;
 }
