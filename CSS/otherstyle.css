@@ -38,7 +38,6 @@ nav > div {
 .parent1{
   padding:20px;
   display:flex;
-  border: solid purple 2px;
 }
 
 .parent1 > img{
@@ -49,9 +48,10 @@ nav > div {
 .child{
   border: solid green 1px;
   flex: 1;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 400px;
   margin: 10px;
+  justify-content: center;
 
 }
 
@@ -97,31 +97,34 @@ nav > div {
   .parent2{
   display:grid;
   grid-template-areas:
-  "i1 i2 i3"
+  "    i1     i2     i3"
    "article article article"
    "article article article"
   }
 
   #image1,#image2,#image3{
-   grid-area: i1, i2, i3;
    background-color: blue;
    border-radius: 20px;
+
 
   }
 
   #image1{
+    grid-area:i1;
     background:url(https://cbsnewyork.files.wordpress.com/2012/01/lucias-08.jpg?w=1440)100% center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   #image2{
+    grid-area:i2;
     background:url(https://asset.homechef.com/uploads/meal/plated/2996/display_homechef_Chicago_Style_Spinach_Deep_Dish_Pizza__8_of_9_.jpg)100% center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   #image3{
+    grid-area:i3;
     background:url(https://s3-media3.fl.yelpcdn.com/bphoto/5CK-YsPPShwuXacmQmkOpg/o.jpg)100% center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,7 +176,7 @@ footer{
   background-color: rgb(193, 60, 60);
   height:100px;
   position: static;
-  margin-top: 100vh;
+  margin-top: 50vh;
   display: flex;
 }
 
