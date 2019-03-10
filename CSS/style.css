@@ -5,7 +5,7 @@
 /*///Header*/
 
 header{
-  margin-top: 16em;
+  /* margin-top: 16em; */
   margin-left: 0;
   /* border: black solid 2px; */
   position:static;
@@ -13,6 +13,7 @@ header{
 }
 .crossBar{
   margin: 0;
+  background-image:url('../Images/redcheckerboard.png');
   background-color: rgba(255, 204, 255);
   position:absolute;
   /* position:sticky; */
@@ -24,8 +25,8 @@ header{
   position: absolute;
   display:flex;
   z-index: 1;
-  margin-top: -4em;
-  padding:20px;
+  margin-top: 12em;
+  padding:30px;
 }
 
 #crossNav1 > h1 {
@@ -34,6 +35,14 @@ header{
 
 #crossNav1 h1{
   padding-left: 20px;
+  font-family: 'Pacifico', cursive;
+  color:white;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    2px 2px 0 #000,
+    2px 2px 0 #000;
+  font-size: 30pt;
 }
 
 #crossNav2{
@@ -45,17 +54,23 @@ header{
   display:flex;
   flex-direction:column;
   margin-top: 15em;
+  align-items: space-around;
 }
 li > a{
   text-decoration: none;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 20pt;
+  font-weight: bold;
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
+
+
 
 #crossNav2{
   width:200px;
-  height: 200vw;
-  margin-top: -16em;
+  height: 200vh;
+  /* margin-top: -16em; */
   position:absolute;
   /* border:red solid 2px; */
 }
@@ -131,11 +146,11 @@ li > a{
 
   height:100vh;
   width:65em;
-  position:absolute;
+  position:relative;
   top:0;
   padding-top: 50px;
   border: black solid 2px;
-  background-color:rgb(255, 200, 134);
+  /* background-color:rgb(255, 200, 134); */
   display:flex;
   overflow:hidden;
   box-sizing: border-box;
@@ -145,7 +160,7 @@ li > a{
 .mainCont article{
   margin:10px;
   padding:10px;
-  background-color: blue;
+  border: rgb(193, 60, 60) solid 3px;
   color: white;
   border-radius: 20px;
   flex: 2;
@@ -185,7 +200,7 @@ span{
 }
 
 footer{
-  /* margin-top:100vw; */
+  margin-top:50vh;
   width:100%;
   background-color: black;
   position: absolute;
