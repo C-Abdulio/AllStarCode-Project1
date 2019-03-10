@@ -38,11 +38,24 @@ header{
   font-family: 'Pacifico', cursive;
   color:white;
   text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    2px 2px 0 #000,
-    2px 2px 0 #000;
+    -1px -2px 0 #000,
+    1px -1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
   font-size: 30pt;
+  transition:2s;
+}
+
+#crossNav1 h1:hover{
+  color:red;
+  text-shadow:
+    -1px -2px 0 #fff,
+    1px -1px 0 #fff,
+    1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  font-size: 60pt;
+  transition: 2s;
+  z-index:6;
 }
 
 #crossNav2{
@@ -56,13 +69,28 @@ header{
   margin-top: 15em;
   align-items: space-around;
 }
-li > a{
+
+#crossNav2 li {
+  margin:10px auto;
+}
+#crossNav2 li > a{
   text-decoration: none;
   justify-content: space-around;
   font-size: 20pt;
   font-weight: bold;
-  color: black;
+  color: white;
+  background-color: red;
+  border-radius: 20px;
+  padding:5px;
+  margin: 10px;
   font-family: 'Roboto', sans-serif;
+}
+
+#crossNav2 li > a:active{
+  color:red;
+  background-color:white;
+  padding:10px;
+  box-shadow: 3px 0px red;
 }
 
 
@@ -123,7 +151,14 @@ li > a{
   padding-top:60px;
   font-size: 50pt;
   font-weight: bolder;
-  text-shadow: 5px 2px black;
+  font-family: 'Pacifico', cursive;
+  text-shadow:
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    3px 3px 0 #000,
+    3px 3px 0 #000,
+    7px 5px rgba(68, 48, 22, 0.5);
+  /* text-shadow: 5px 2px rgba(0,0,0,0.5); */
   color:white;
   text-align:center;
   align-items: center;
@@ -148,8 +183,8 @@ li > a{
   width:90em;
   position:relative;
   top:0;
-  padding-top: 50px;
-  border: black solid 2px;
+  padding-top: 10px;
+  /* border: black solid 2px; */
   /* background-color:rgb(255, 200, 134); */
   display:flex;
   overflow:hidden;
@@ -157,7 +192,7 @@ li > a{
   margin: 7em 13em 0;
 }
 
-.mainCont article{
+.mainCont > article{
   margin:5px;
   padding:10px;
   border: rgb(193, 60, 60) solid 3px;
@@ -166,6 +201,7 @@ li > a{
   border-radius: 20px;
   flex: 2;
   display:grid;
+  font-family: 'Roboto', sans-serif;
 }
 
 article > .parent{
@@ -194,14 +230,21 @@ article .child{
   border-radius: 10px;
 }
 
-span{
+h2{
   color:red;
   font-weight: bold;
   font-size: 20pt;
 }
 
+article span{
+  color:green;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
 footer{
-  margin-top:50vh;
+  margin-top:57vh;
   width:100%;
   background-color: black;
   position: absolute;
