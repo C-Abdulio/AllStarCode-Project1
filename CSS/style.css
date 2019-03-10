@@ -8,7 +8,8 @@ header{
   margin-top: 16em;
   margin-left: 0;
   /* border: black solid 2px; */
-  position:fixed;
+  position:static;
+  z-index: 5;
 }
 .crossBar{
   margin: 0;
@@ -27,7 +28,7 @@ header{
   padding:20px;
 }
 
-#crossNav1 > h1 + nav{
+#crossNav1 > h1 {
   justify-content: flex-end;
 }
 
@@ -35,13 +36,20 @@ header{
   padding-left: 20px;
 }
 
-#crossNav1 nav{
+#crossNav2{
+  z-index:2;
+}
+
+#crossNav2 nav{
   list-style:none;
   display:flex;
+  flex-direction:column;
+  margin-top: 15em;
 }
-nav > li{
+li > a{
   text-decoration: none;
   justify-content: space-around;
+  font-size: 20px;
 }
 
 #crossNav2{
@@ -92,7 +100,7 @@ nav > li{
 .paralax{
   width:auto;
   height:200px;
-  background-image:url(http://www.artofwellbeing.com/wp-content/uploads/2015/09/Healthy-coffee-2.jpg);
+  background-image:url(https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fsirpizza-mi.com%2Fwp-content%2Fuploads%2F2017%2F11%2FSir-Pizza-Pepperoni-Feast-1920x1200.jpg&f=1);
   background-attachment: fixed;
 }
 
@@ -110,16 +118,28 @@ nav > li{
 
 .mainCont{
   /* margin-left: 20px; */
-  /* margin-top: 20px; */
+  /* margin-top: 20px;
   margin:12em 13em 0 ;
   width:65em;
   height:100vw;
   /* position:relative; */
-  overflow:scroll;
+  /* overflow:scroll;
   border:black solid 1px;
-  background-color:rgb(255,200,134);
+  background-color:rgb(255,200,134); */
   /* z-index: 2; */
+  /* display:flex; */
+
+  height:100vh;
+  width:65em;
+  position:absolute;
+  top:0;
+  padding-top: 50px;
+  border: black solid 2px;
+  background-color:rgb(255, 200, 134);
   display:flex;
+  overflow:hidden;
+  box-sizing: border-box;
+  margin: 12em 13em 0;
 }
 
 .mainCont article{
@@ -136,6 +156,16 @@ article > .parent{
   width: 100%;
   height: 100px;
   border: red solid 1px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr) 50px;
+}
+
+article .child{
+
+  width:100%;
+  height:100px;
+  background-color:black;
+  margin:5px;
 }
 
 .mainCont section{
